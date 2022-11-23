@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\AsyncDatabaseController;
-use App\Http\Controllers\AuthorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,13 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-Route::get("authors", [AuthorController::class, 'index']);
-Route::get("authors/{id}", [AuthorController::class, 'show']);
-Route::post("authors", [AuthorController::class, 'create']);
-Route::put("authors", [AuthorController::class, 'update']);
-Route::delete("authors/{id}", [AuthorController::class, 'delete']);
-Route::post("async-database", [AsyncDatabaseController::class, 'asyncDatabase']);
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
