@@ -1,8 +1,10 @@
 <?php
+declare(strict_types=1);
 
 namespace Database\Seeders;
-
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Post;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,13 +14,18 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+//        if (app()->environment('local')) {
+//            $this->call(DefaultUserSeeder::class);
+//        }
+        Post::factory(20)->for(
+            User::factory()->create([
+                'first_name' => 'Duong',
+                'last_name' => 'Doan',
+                'email' => "administrator@gmail.com"
+            ])
+        )->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
