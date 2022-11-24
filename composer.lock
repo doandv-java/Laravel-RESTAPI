@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "376abf087e3665ae73c1dd6fb2793b74",
+    "content-hash": "0fbcfbcc72310b7a2290ec4bf8e551da",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1132,6 +1132,59 @@
                 }
             ],
             "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
+            "name": "juststeveking/http-status-code",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/http-status-code.git",
+                "reference": "1e14f1817f84b2df072359007d0e1b2989fc5ae9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/http-status-code/zipball/1e14f1817f84b2df072359007d0e1b2989fc5ae9",
+                "reference": "1e14f1817f84b2df072359007d0e1b2989fc5ae9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^0.2.3",
+                "phpunit/phpunit": "^9.5.4",
+                "thecodingmachine/phpstan-safe-rule": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\StatusCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://www.juststeveking.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple class to return correct status codes for http responses",
+            "support": {
+                "issues": "https://github.com/JustSteveKing/http-status-code/issues",
+                "source": "https://github.com/JustSteveKing/http-status-code/tree/3.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-10-17T19:47:50+00:00"
         },
         {
             "name": "juststeveking/laravel-key-factory",
@@ -3581,6 +3634,78 @@
                 }
             ],
             "time": "2022-11-15T09:10:09+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "2243e3d60fc184ef20ad2b19765bc7006fa9dbfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/2243e3d60fc184ef20ad2b19765bc7006fa9dbfc",
+                "reference": "2243e3d60fc184ef20ad2b19765bc7006fa9dbfc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0",
+                "illuminate/http": "^9.0",
+                "illuminate/support": "^9.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.11"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.20",
+                "spatie/laravel-ray": "^1.28"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src",
+                    "Spatie\\QueryBuilder\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-query-builder/issues",
+                "source": "https://github.com/spatie/laravel-query-builder"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-07-29T14:19:59+00:00"
         },
         {
             "name": "symfony/console",

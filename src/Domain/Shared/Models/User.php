@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Models;
+namespace Domain\Shared\Models;
 
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Domain\Blogging\Models\Post;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
