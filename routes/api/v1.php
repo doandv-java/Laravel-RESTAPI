@@ -2,12 +2,11 @@
 declare(strict_types=1);
 
 use App\Http\Controllers\Api\V1\Posts\DeleteController;
+use App\Http\Controllers\Api\V1\Posts\IndexController;
 use App\Http\Controllers\Api\V1\Posts\ShowController;
 use App\Http\Controllers\Api\V1\Posts\StoreController;
 use App\Http\Controllers\Api\V1\Posts\UpdateController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\V1\Posts\IndexController;
 
 
 //Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
