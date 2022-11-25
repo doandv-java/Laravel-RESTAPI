@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Domain\Blogging\Models;
 
+use Database\Factories\PostFactory;
 use Domain\Blogging\Models\Builders\PostBuilder;
 use Domain\Shared\Models\Concerns\HasSlug;
 use Domain\Shared\Models\User;
@@ -16,7 +17,6 @@ class Post extends Model
 {
     use HasKey;
     use HasSlug;
-    use HasFactory;
     use SoftDeletes;
 
     protected $fillable = [
@@ -49,4 +49,8 @@ class Post extends Model
         return new PostBuilder(query: $query);
     }
 
+    protected static function newFactory(): PostFactory
+    {
+        return resolve(PostFactory::class);
+    }
 }

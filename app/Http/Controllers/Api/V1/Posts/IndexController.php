@@ -24,7 +24,7 @@ class IndexController extends Controller
 //                    AllowedFilter::scope('published'),
 //                    AllowedFilter::scope('draft')
 //                ])
-            ->paginate(3);
+            ->paginate();
         return response()->json(
             data: PostResource::collection($post),
             status: Http::OK()
